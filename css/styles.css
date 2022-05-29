@@ -15,8 +15,15 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 2rem 4rem 2rem;
     gap: 2rem;
+    max-width: 70rem;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem 0 2rem;
     max-width: 70rem;
 }
 /*** HEADER ***/
