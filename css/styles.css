@@ -28,7 +28,7 @@ main {
 }
 .header h1, span{
     color: hsl(234, 12%, 34%);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 .header p {
     color: hsl(229, 6%, 66%);
