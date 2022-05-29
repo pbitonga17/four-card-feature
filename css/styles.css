@@ -24,7 +24,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 4rem 2rem 0 2rem;
-    max-width: 70rem;
+    max-width: 40rem;
 }
 /*** HEADER ***/
 
@@ -43,7 +43,12 @@ header {
     margin-top: 20px;
     margin-bottom: 50px;
 }
-
+@media screen and (min-width: 1000px) {
+    .header h1, span {
+        font-size: 2.4rem;
+        padding: 0;
+    }
+}
 /*** HEADER -END- ***/
 
 /*** CONTAINER ***/
@@ -86,5 +91,42 @@ img {
 }
 .calculator {
     border-top: 6px solid blue;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        max-width: 75rem;
+        min-height: 20rem;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'supervisor builder calculator'
+            'supervisor karma calculator';
+    }
+    .container {
+        border-radius: 5px;
+        padding: 2.5rem 2rem;
+    }
+    .supervisor {
+        grid-area: supervisor;
+        justify-self: center;
+        align-self: center;
+    }
+    .team-builder {
+        grid-area: builder;
+        justify-self: center;
+        align-self: end;
+    }
+    .calculator {
+        grid-area: calculator;
+        justify-self: center;
+        align-self: center;
+    }
+    .karma {
+        grid-area: karma;
+        justify-self: center;
+        align-self: start;
+    }
 }
 /*** CONTAINER -END- ***/
